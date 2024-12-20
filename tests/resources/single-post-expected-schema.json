@@ -1,0 +1,58 @@
+{
+    "type": "object",
+    "properties": {
+        "path": {
+            "type": "string",
+            "enum": ["/api/test"]
+        },
+        "method": {
+            "type": "string",
+            "enum": ["POST"]
+        },
+        "query_params": {
+            "type": "object",
+            "properties": {
+                "number_of_dogs": {
+                    "type": "integer"
+                },
+                "pet_names": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                }
+            },
+            "required": ["number_of_dogs"],
+            "additionalProperties": false
+        },
+        "body": {
+            "type": "object",
+            "properties": {
+                "top_name": {
+                    "type": "string"
+                },
+                "details": {
+                    "type": "object",
+                    "properties": {
+                        "breed": {
+                            "type": "string"
+                        },
+                        "fleas": {
+                            "type": "boolean"
+                        },
+                        "status": {
+                            "type": "string",
+                            "enum": ["walking", "running", "resting"]
+                        }
+                    },
+                    "required": ["breed", "fleas", "status"],
+                    "additionalProperties": false
+                }
+            },
+            "required": ["details"],
+            "additionalProperties": false
+        }
+    },
+    "required": ["path", "method", "query_params"],
+    "additionalProperties": false
+}

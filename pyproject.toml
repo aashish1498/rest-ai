@@ -7,11 +7,16 @@ readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.10"
+jsonschema = "^4.23.0"
+pyyaml = "^6.0.2"
+ollama = "^0.4.4"
+langchain-ollama = "^0.2.1"
 
 
 [tool.poetry.group.dev.dependencies]
 black = "^24.10.0"
 isort = "^5.13.2"
+pylint = "^3.3.2"
 
 
 [tool.poetry.group.test.dependencies]
