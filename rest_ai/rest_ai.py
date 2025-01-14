@@ -25,7 +25,6 @@ class RestAi:
         self.base_url = base_url
         self.openapi_spec = format_openapi(openapi_spec)
         self.base_model = base_model
-        print(self.openapi_spec)
 
     def invoke(self, prompt: str) -> Response:
         rest_request = self.extract_request(
