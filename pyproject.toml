@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "rest-ai"
 version = "0.1.0"
-description = ""
+description = "Using Langchain to parse language to REST API calls."
 authors = ["Aashish Mehta <admin@aashishmehta.com>"]
 readme = "README.md"
 
