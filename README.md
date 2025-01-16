@@ -11,6 +11,8 @@ Features:
 - Invokes the request, and verifies a correct response
 - Uses reasoned retry logic to try and correct invalid requests
 
+Find out more about the package at https://aashishmehta.com/rest-ai-queries-making-apis-smarter/
+
 ## Installation
 
 `pip install rest-ai`

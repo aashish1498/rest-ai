@@ -6,7 +6,7 @@ class QueryParsingException(Exception):
 Unable to parse query into a Rest Request.
 
 Potential reasons:
-    - Provided ChatModel is too small 
+    - Provided ChatModel is too small or does not support structured outputs`
     - Provided OpenAPI is too vague or large
     
 Error message: {message}
