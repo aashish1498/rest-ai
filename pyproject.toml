@@ -1,25 +1,25 @@
 [tool.poetry]
 name = "rest-ai"
-version = "0.1.3"
+version = "0.2.0"
 description = "Using Langchain to parse language to REST API calls."
 authors = ["Aashish Mehta <admin@aashishmehta.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.10"
+python = "^3.9"
 jsonschema = "^4.23.0"
 pyyaml = "^6.0.2"
-ollama = "^0.4.4"
-langchain-ollama = "^0.2.1"
 requests = "^2.32.3"
 jsonref = "^1.1.0"
 pytest = "^8.3.4"
+langchain-core = "^0.3.30"
 
 
 [tool.poetry.group.dev.dependencies]
 black = "^24.10.0"
 isort = "^5.13.2"
 pylint = "^3.3.2"
+ollama = "^0.4.6"
 
 
 [tool.poetry.group.test.dependencies]
